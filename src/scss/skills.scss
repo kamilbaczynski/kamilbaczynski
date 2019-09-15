@@ -1,0 +1,37 @@
+.skills {
+	margin: 0 128px 168px 128px;
+	&__header {
+		font-weight: 600;
+		font-size: 36px;
+		line-height: 48px;
+		border-bottom: 2px solid #CBD2D9;
+		margin-bottom: 128px;
+	}
+}
+
+.skill {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: 128px;
+
+	&__header {
+		margin: 0;
+		font-weight: 600;
+		font-size: 36px;
+		line-height: 48px;
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 24px;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		&--item {
+			font-size: 18px;
+			line-height: 40px;
+			white-space: nowrap;
+		}
+	}
+}
