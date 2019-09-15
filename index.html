@@ -1,40 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Kamil Baczyński - Homepage</title>
+  <meta name="description" content="Description" />
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <!-- Title -->
+  <meta property="og:title" content="" />
+  <!-- OPTIONAL description. 2-4 sentences. -->
+  <meta property="og:description" content="" />
+  <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+  <meta property="og:url" content="" />
+  <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+  <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>kamilbaczynski.github.io</h1>
+  <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
 
-    <script src="js/main.js"></script>
-  </body>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <main>
+
+    <section class="about">
+
+      <img class="about__photo" src="assets/img/avatar.png" alt="Zdjęcie autora strony">
+
+      <h1 class="about__header">Hey there! 👋 My name is Kamil and I’m an aspiring frontend developer and amatour musician.</h1>
+
+      <p class="about__description">You might be interested in checking the list of 
+        <a class="about__description--link" href="#">my skills</a>. Don’t forget to  have a glimpse at 
+        <a class="about__description--link" href="#">my projects</a>. Currently I’m looking for a new challenges so if you have one - 
+        <a class="about__description--link" href="#">contact me</a> 😊
+      </p>
+
+      <a class="about__email" href="mailto: kamil-baczynski1@wp.pl">kamil-baczynski1@wp.pl</a>
+      
+    </section>
+
+    <section class="skills">
+      <h2 class="skills__header">My skills</h2>
+
+      <article class="skill">
+        <h3 class="skill__header">Working knowledge</h3>
+        <ul class="skill__list">
+          <li class="skill__list--item">Semantic HTML5</li>
+          <li class="skill__list--item">Flexbox</li>
+          <li class="skill__list--item">Markdown</li>
+          <li class="skill__list--item">JS: Local storage</li>
+          <li class="skill__list--item">Figma</li>
+          <li class="skill__list--item">CSS grid</li>
+          <li class="skill__list--item">Forms</li>
+          <li class="skill__list--item">JS: DOM manipulations</li>
+          <li class="skill__list--item">SASS</li>
+        </ul>
+      </article>
+
+      <article class="skill">
+        <h3 class="skill__header">Know something about</h3>
+        <ul class="skill__list">
+          <li class="skill__list--item">JavaScript ES6+ features</li>
+          <li class="skill__list--item">CSS animations</li>
+          <li class="skill__list--item">Working with API</li>
+          <li class="skill__list--item">NPM Scripts</li>
+          <li class="skill__list--item">Progressive web apps</li>
+          <li class="skill__list--item">Git</li>
+          <li class="skill__list--item">Accessibility</li>
+        </ul>
+      </article>
+
+      <article class="skill">
+        <h3 class="skill__header">Want to learn</h3>
+        <ul class="skill__list">
+          <li class="skill__list--item">React JS</li>
+          <li class="skill__list--item">Node.JS</li>
+          <li class="skill__list--item">Electron</li>
+          <li class="skill__list--item">Server side rendering</li>
+          <li class="skill__list--item">Typescript</li>
+          <li class="skill__list--item">Gatsby</li>
+          <li class="skill__list--item">Websockets</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="projects">
+      <h2 class="projects__header">Recent projects</h2>
+      <p class="projects__description">I started my frontend developer path in 2019 with WTF: Co Ten Frontend course conducted by Maciej Korsan. Here is the list of the things I’ve done so far.</p>
+
+      <article class="project-card">
+        <img class="project-card__image" src="#" alt="#">
+        <h3 class="project-card__name">title</h3>
+        <p class="project-card__description">opis</p>
+        <span class="project-card__footer"><a class="project-card__footer--link" href="#">demo</a><a class="project-card__footer--link" href="#">github</a></span>
+      </article>
+
+      <article class="project-card">
+        <img class="project-card__image" src="#" alt="#">
+        <h3 class="project-card__name">title</h3>
+        <p class="project-card__description">opis</p>
+        <span class="project-card__footer"><a class="project-card__footer--link" href="#">demo</a><a class="project-card__footer--link" href="#">github</a></span>
+      </article>
+
+      <article class="project-card">
+        <img class="project-card__image" src="#" alt="#">
+        <h3 class="project-card__name">title</h3>
+        <p class="project-card__description">opis</p>
+        <span class="project-card__footer"><a class="project-card__footer--link" href="#">demo</a><a class="project-card__footer--link" href="#">github</a></span>
+      </article>
+
+      <article class="project-card">
+        <img class="project-card__image" src="#" alt="#">
+        <h3 class="project-card__name">title</h3>
+        <p class="project-card__description">opis</p>
+        <span class="project-card__footer"><a class="project-card__footer--link" href="#">demo</a><a class="project-card__footer--link" href="#">github</a></span>
+      </article>
+
+    </section>
+
+    <section class="contact">
+      <h2 class="contact__header">Contact me</h2>
+      <p class="contact__description">I’m open for new opportunities. If you have one for me we should talk!</p>
+
+      <a class="contact__social--link" href="https://facebook.pl/"><img src="#" alt="Ikona facebook"></a>
+      <a class="contact__social--link" href="https://github.com/"><img src="#" alt="Ikona github"></a>
+      <a class="contact__social--link" href="https://instagram.pl/"><img src="#" alt="Ikona instagram"></a>
+
+      <a href="mailto: kamil-baczynski1@wp.pl" class="about__email">kamil-baczynski1@wp.pl</a>
+    </section>
+
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+
 </html>
