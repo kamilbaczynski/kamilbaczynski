@@ -1,8 +1,8 @@
 @import "_normalize";
 @import "_variables";
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap&subset=latin-ext');
-@import "about.scss";
-@import "skills.scss";
+@import "modules/about.scss";
+@import "modules/skills.scss";
 
 html {
   box-sizing: border-box;
