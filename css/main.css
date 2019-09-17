@@ -363,7 +363,20 @@ template {
     margin: 0;
     font-weight: 600;
     font-size: 36px;
-    line-height: 48px; }
+    line-height: 48px;
+    position: relative; }
+    .skill__header::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 4px;
+      border-radius: 8px;
+      top: -24px;
+      background-color: #06C847; }
+      .skill-purple .skill__header::before {
+        background: #653CAD; }
+      .skill-blue .skill__header::before {
+        background: #2251CC; }
   .skill__list {
     display: -ms-grid;
     display: grid;
@@ -376,7 +389,21 @@ template {
     .skill__list--item {
       font-size: 18px;
       line-height: 40px;
-      white-space: nowrap; }
+      white-space: nowrap;
+      position: relative; }
+      .skill__list--item::before {
+        content: "";
+        position: absolute;
+        top: 12px;
+        left: -28px;
+        width: 18px;
+        height: 18px;
+        background-image: url("../../assets/img/check-green.svg");
+        background-size: cover; }
+        .skill-purple .skill__list--item::before {
+          background-image: url("../../assets/img/check-purple.svg"); }
+        .skill-blue .skill__list--item::before {
+          background-image: url("../../assets/img/check-blue.svg"); }
 
 html {
   -webkit-box-sizing: border-box;
