@@ -1,0 +1,106 @@
+.projects {
+	background-color: #F5F7FA;
+	padding: 128px 0 128px 128px;
+
+	&__header {
+		margin: 0 0 16px 0;
+		padding: 0;
+		font-weight: 600;
+		font-size: 36px;
+		line-height: 48px;
+	}
+
+	&__description {
+		margin: 0 0 64px 0;
+		max-width: 600px;
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 36px;
+	}
+
+	&__containter {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 24px;
+		grid-row-gap: 24px;
+		margin-right: 128px;
+	}
+}
+
+.project-card {
+	background: #FFFFFF;
+	box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+	border-radius: 8px;
+	&__image {
+    padding: 3px;
+		margin: 48px 0 16px 48px;
+	}
+
+	&__name {
+		font-weight: 600;
+		font-size: 20px;
+    line-height: 36px;
+    margin: 0 0 8px 48px;
+    padding: 0;
+	}
+
+	&__description {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: $darkGrey;
+    margin: 0 0 48px 48px;
+    padding: 0;
+	}
+
+	&__footer {
+    display: block;
+		text-align: right;
+		background-color: $dirtyWhite;
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px;
+		
+
+		&--link {
+			margin: 16px 48px 16px 0;
+			padding-left: 5px;
+			display: inline-block;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 18px;
+			line-height: 32px;
+
+			&-github {
+				position: relative;
+				&::before {
+					content: "";
+					position: absolute;
+					top: 5px;
+					left: -20px;
+					width: 20px;
+					height: 20px;
+					background: url(../../assets/img/code-icon.svg) center center no-repeat;
+				}
+			}
+
+			&-demo {
+				position: relative;
+				&::before {
+					content: "";
+					position: absolute;
+					top: 6px;
+					left: -22px;
+					width: 22px;
+					height: 18px;
+					background: url(../../assets/img/demo-icon.svg) center center no-repeat;
+
+				}
+			}
+
+			&:visited {
+				color: $linkBlue;
+			}
+		}
+	}
+
+}

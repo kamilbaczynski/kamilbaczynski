@@ -5,42 +5,42 @@
 	margin-bottom: 200px;
 
 	&__photo {
-			display: block;
-			height: 120px;
-			width: 120px;
-			padding: 10px;
-			margin-bottom: 32px;
+		display: block;
+		height: 120px;
+		width: 120px;
+		padding: 10px;
+		margin-bottom: 32px;
 	}
 
 	&__header {
-			font-weight: 600;
-			font-size: 40px;
-			line-height: 56px;
-			margin-bottom: 16px;
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 56px;
+		margin-bottom: 16px;
 	}
 
 	&__description {
-			font-weight: 300;
-			font-size: 20px;
-			line-height: 36px;
-			color: $darkGrey;
-			margin-bottom: 60px;
-			&--link {
-			font-weight: 500;
-			color: $linkBlue;
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 36px;
+		color: $darkGrey;
+		margin-bottom: 60px;
+		&--link {
+		font-weight: 500;
+		color: $linkBlue;
 			&:visited {
-					color: $linkBlue;
+				color: $linkBlue;
 			}
-			}
+		}
 	}
 
 	&__email {
-			font-weight: 500;
-			font-size: 20px;
-			line-height: 32px;
-			color: $linkBlue;
-			text-decoration: none;
-			padding-bottom: 8px;
-			border-bottom: 2px solid $linkBlue;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 32px;
+		color: $linkBlue;
+		text-decoration: none;
+		padding-bottom: 8px;
+		border-bottom: 2px solid $linkBlue;
 	}
 }
