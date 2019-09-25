@@ -405,6 +405,88 @@ template {
         .skill-blue .skill__list--item::before {
           background-image: url("../../assets/img/check-blue.svg"); }
 
+.projects {
+  background-color: #F5F7FA;
+  padding: 128px 0 128px 128px; }
+  .projects__header {
+    margin: 0 0 16px 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px; }
+  .projects__description {
+    margin: 0 0 64px 0;
+    max-width: 600px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 36px; }
+  .projects__containter {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    margin-right: 128px; }
+
+.project-card {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+          box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+  border-radius: 8px; }
+  .project-card__image {
+    padding: 3px;
+    margin: 48px 0 16px 48px; }
+  .project-card__name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 36px;
+    margin: 0 0 8px 48px;
+    padding: 0; }
+  .project-card__description {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #52606D;
+    margin: 0 0 48px 48px;
+    padding: 0; }
+  .project-card__footer {
+    display: block;
+    text-align: right;
+    background-color: #F5F7FA;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px; }
+    .project-card__footer--link {
+      margin: 16px 48px 16px 0;
+      padding-left: 5px;
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 32px; }
+      .project-card__footer--link-github {
+        position: relative; }
+        .project-card__footer--link-github::before {
+          content: "";
+          position: absolute;
+          top: 5px;
+          left: -20px;
+          width: 20px;
+          height: 20px;
+          background: url(../../assets/img/code-icon.svg) center center no-repeat; }
+      .project-card__footer--link-demo {
+        position: relative; }
+        .project-card__footer--link-demo::before {
+          content: "";
+          position: absolute;
+          top: 6px;
+          left: -22px;
+          width: 22px;
+          height: 18px;
+          background: url(../../assets/img/demo-icon.svg) center center no-repeat; }
+      .project-card__footer--link:visited {
+        color: #0593FB; }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
