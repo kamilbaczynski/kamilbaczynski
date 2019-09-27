@@ -1,0 +1,69 @@
+.contact {
+  background-color: $stoneBlue;
+  padding: 128px 0 128px 128px;
+  
+  &__header {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: #FFFFFF;
+
+    margin: 0 0 16px 0;
+    padding: 24px 0 0 0;
+
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -4px;
+      width: 80px;
+      height: 4px;
+      background: #0593FB;
+      border-radius: 8px;
+    }
+  }
+
+
+  &__description {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 36px;
+    color: #FFFFFF;
+
+    margin: 0 0 24px 0;
+    padding: 0;
+  }
+
+
+  &__social-link {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    margin: 0 24px 48px 0;
+
+    &--facebook {
+      background: url(../../assets/img/fb-icon.svg) center center no-repeat;
+    }
+    &--github {
+      background: url(../../assets/img/github-icon.svg) center center no-repeat;
+    }
+    
+    &--instagram {
+      background: url(../../assets/img/insta-icon.svg) center center no-repeat;
+    }
+  }
+
+  &__email {
+    &--link {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 32px;
+      color: $linkBlue;
+      border-bottom: 2px solid $linkBlue;
+      padding-bottom: 8px;
+      text-decoration: none;
+    }
+  }
+}
