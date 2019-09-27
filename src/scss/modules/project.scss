@@ -1,6 +1,7 @@
 .projects {
 	background-color: #F5F7FA;
-	padding: 128px 0 128px 128px;
+	padding: 128px 112px 128px 112px;
+	
 
 	&__header {
 		margin: 0 0 16px 0;
@@ -23,7 +24,6 @@
 		grid-template-columns: 1fr 1fr;
 		grid-column-gap: 24px;
 		grid-row-gap: 24px;
-		margin-right: 128px;
 	}
 }
 
