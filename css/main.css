@@ -309,8 +309,8 @@ template {
   display: none; }
 
 .about {
-  margin-top: 128px;
-  margin-left: 128px;
+  margin-top: 112px;
+  margin-left: 112px;
   max-width: 60vw;
   margin-bottom: 200px; }
   .about__photo {
@@ -345,7 +345,7 @@ template {
     border-bottom: 2px solid #0593FB; }
 
 .skills {
-  margin: 0 128px 168px 128px; }
+  margin: 0 112px 168px 112px; }
   .skills__header {
     font-weight: 600;
     font-size: 36px;
@@ -407,7 +407,7 @@ template {
 
 .projects {
   background-color: #F5F7FA;
-  padding: 128px 0 128px 128px; }
+  padding: 128px 112px 128px 112px; }
   .projects__header {
     margin: 0 0 16px 0;
     padding: 0;
@@ -426,8 +426,7 @@ template {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 24px;
-    grid-row-gap: 24px;
-    margin-right: 128px; }
+    grid-row-gap: 24px; }
 
 .project-card {
   background: #FFFFFF;
@@ -463,7 +462,8 @@ template {
       text-decoration: none;
       font-weight: 500;
       font-size: 18px;
-      line-height: 32px; }
+      line-height: 32px;
+      color: #0593FB; }
       .project-card__footer--link-github {
         position: relative; }
         .project-card__footer--link-github::before {
@@ -487,10 +487,59 @@ template {
       .project-card__footer--link:visited {
         color: #0593FB; }
 
+.contact {
+  background-color: #171F3F;
+  padding: 128px 0 112px 112px; }
+  .contact__header {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: #FFFFFF;
+    margin: 0 0 16px 0;
+    padding: 24px 0 0 0;
+    position: relative; }
+    .contact__header::before {
+      content: "";
+      position: absolute;
+      top: -4px;
+      width: 80px;
+      height: 4px;
+      background: #0593FB;
+      border-radius: 8px; }
+  .contact__description {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin: 0 0 24px 0;
+    padding: 0; }
+  .contact__social-link {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    margin: 0 24px 48px 0; }
+    .contact__social-link--facebook {
+      background: url(../../assets/img/fb-icon.svg) center center no-repeat; }
+    .contact__social-link--github {
+      background: url(../../assets/img/github-icon.svg) center center no-repeat; }
+    .contact__social-link--instagram {
+      background: url(../../assets/img/insta-icon.svg) center center no-repeat; }
+  .contact__email--link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: #0593FB;
+    border-bottom: 2px solid #0593FB;
+    padding-bottom: 8px;
+    text-decoration: none; }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 16px; }
+  font-size: 16px;
+  scroll-behavior: smooth; }
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;

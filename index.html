@@ -36,16 +36,16 @@
       <h1 class="about__header">Hey there! 👋 My name is Kamil and I’m an aspiring frontend developer and amatour musician.</h1>
 
       <p class="about__description">You might be interested in checking the list of 
-        <a class="about__description--link" href="#">my skills</a>. Don’t forget to  have a glimpse at 
-        <a class="about__description--link" href="#">my projects</a>. Currently I’m looking for a new challenges so if you have one - 
-        <a class="about__description--link" href="#">contact me</a> 😊
+        <a class="about__description--link" href="#skills">my skills</a>. Don’t forget to  have a glimpse at 
+        <a class="about__description--link" href="#projects">my projects</a>. Currently I’m looking for a new challenges so if you have one - 
+        <a class="about__description--link" href="#contact">contact me</a> 😊
       </p>
 
       <a class="about__email" href="mailto: kamil-baczynski1@wp.pl">kamil-baczynski1@wp.pl</a>
       
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
       <h2 class="skills__header">My skills</h2>
 
       <article class="skill skill-green">
@@ -90,7 +90,7 @@
       </article>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
       <h2 class="projects__header">Recent projects</h2>
       <p class="projects__description">I started my frontend developer path in 2019 with WTF: Co Ten Frontend course conducted by Maciej Korsan. Here is the list of the things I’ve done so far.</p>
 
@@ -137,15 +137,20 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <h2 class="contact__header">Contact me</h2>
       <p class="contact__description">I’m open for new opportunities. If you have one for me we should talk!</p>
 
-      <a class="contact__social--link" href="https://facebook.pl/"><img src="#" alt="Ikona facebook"></a>
-      <a class="contact__social--link" href="https://github.com/"><img src="#" alt="Ikona github"></a>
-      <a class="contact__social--link" href="https://instagram.pl/"><img src="#" alt="Ikona instagram"></a>
+      <a class="contact__social-link contact__social-link--facebook" href="https://facebook.pl/"></a>
+      <a class="contact__social-link contact__social-link--github" href="https://github.com/"></a>
+      <a class="contact__social-link contact__social-link--instagram" href="https://instagram.pl/"></a>
 
-      <a href="mailto: kamil-baczynski1@wp.pl" class="about__email">kamil-baczynski1@wp.pl</a>
+      <div class="contact__email">
+        <a href="mailto: kamil-baczynski1@wp.pl" class="contact__email--link">
+          kamil-baczynski1@wp.pl
+        </a>
+      </div>
+
     </section>
 
   </main>
