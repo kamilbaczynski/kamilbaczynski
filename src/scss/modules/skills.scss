@@ -1,11 +1,22 @@
 .skills {
 	margin: 0 112px 168px 112px;
+	@media (max-width: 787px) {
+		margin: 0 12px 80px 12px;
+	}
 	&__header {
 		font-weight: 600;
 		font-size: 36px;
 		line-height: 48px;
+		padding-bottom: 16px;
 		border-bottom: 2px solid #CBD2D9;
 		margin-bottom: 128px;
+		@media (max-width: 787px) {
+			font-size: 24px;
+			line-height: 32px;
+			text-align: center;
+			padding-bottom: 16px;
+			margin-bottom: 60px;
+		}
 	}
 }
 
@@ -13,6 +24,10 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	margin-bottom: 128px;
+	@media (max-width: 787px) {
+		grid-template-columns: 1fr;
+		margin-bottom: 48px;
+	}
 
 	&__header {
 		margin: 0;
@@ -20,6 +35,10 @@
 		font-size: 36px;
 		line-height: 48px;
 		position: relative;
+		@media (max-width: 787px) {
+			font-size: 22px;
+			line-height: 32px;
+		}
 		&::before {
 			content: "";
 			position: absolute;
@@ -28,6 +47,11 @@
 			border-radius: 8px;
 			top: -24px;
 			background-color: $green;
+			@media (max-width: 787px) {
+				width: 40px;
+				height: 4px;
+				top: -12px;
+			}
 			.skill-purple & {
 				background: $purple;
 			}
@@ -44,20 +68,30 @@
 		padding: 0;
 		margin: 0;
 		list-style: none;
+		@media (max-width: 787px) {
+			grid-template-columns: 1fr;
+		}
 		&--item {
 			font-size: 18px;
 			line-height: 40px;
 			white-space: nowrap;
 			position: relative;
+			@media (max-width: 787px) {
+				padding-left: 24px;
+			}
 			&::before {
 				content: "";
 				position: absolute;
-				top: 12px;
+				top: 11px;
 				left: -28px;
 				width: 18px;
 				height: 18px;
 				background-image: url('../../assets/img/check-green.svg');
 				background-size: cover;
+				@media (max-width: 787px) {
+					width: 12px;
+					height: 12px;
+				}
 				.skill-purple & {
 					background-image: url('../../assets/img/check-purple.svg');
 				}

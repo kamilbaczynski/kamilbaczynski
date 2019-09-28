@@ -1,6 +1,8 @@
 @import "_normalize";
 @import "_variables";
+
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap&subset=latin-ext');
+
 @import "modules/about.scss";
 @import "modules/skills.scss";
 @import "modules/project.scss";
@@ -22,4 +24,7 @@ body {
   font-family: poppins;
   font-style: normal;
   color: $stoneBlue;
+  @media (max-width: 787px) {
+    border: none;
+  }
 }

@@ -19,7 +19,7 @@ fetch ('https://api.github.com/users/kamilbaczynski/repos?sort=created')
         ? `<p class="project-card__description">${description}</p>` 
         : `<p class="project-card__description">No description 😫</p>`
       }
-      <span class="project-card__footer">
+      <div class="project-card__footer">
 
         ${
           homepage 
@@ -32,6 +32,8 @@ fetch ('https://api.github.com/users/kamilbaczynski/repos?sort=created')
           ? `<a class="project-card__footer--link project-card__footer--link-github" href="${html_url}">github</a>` 
           : `<a class="project-card__footer--link project-card__footer--link-github" href="">github</a>`
         }
+      
+      </div>
         
       </article>    
       `
