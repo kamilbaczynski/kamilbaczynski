@@ -71,6 +71,10 @@
 			line-height: 32px;
 			color: $linkBlue;
 
+			&-disactive {
+				display: none;
+			}
+
 			&-github {
 				position: relative;
 				&::before {
