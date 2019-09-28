@@ -448,8 +448,8 @@ template {
       .skill__list--item::before {
         content: "";
         position: absolute;
-        top: 14px;
-        left: 0px;
+        top: 11px;
+        left: -28px;
         width: 18px;
         height: 18px;
         background-image: url("../../assets/img/check-green.svg");
