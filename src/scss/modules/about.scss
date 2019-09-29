@@ -83,6 +83,13 @@
 					color: $linkBlue;
 				}
 			}
+			&-contact:hover + .about__description--happy-face {
+				transform: rotate(1turn);
+			}
+		}
+		&--happy-face {
+			display: inline-block;
+			transition: transform .5s linear;
 		}
 	}
 
