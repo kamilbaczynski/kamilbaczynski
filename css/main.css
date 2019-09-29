@@ -308,6 +308,40 @@ template {
 [hidden] {
   display: none; }
 
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  25% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg); }
+  50% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  75% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg); }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); } }
+
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  25% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg); }
+  50% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  75% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg); }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); } }
+
 .about {
   margin: 112px 0 200px 112px; }
   @media (max-width: 787px) {
@@ -318,7 +352,16 @@ template {
     height: 120px;
     width: 120px;
     padding: 10px;
-    margin-bottom: 16px; }
+    margin-bottom: 16px;
+    -webkit-transition: -webkit-transform .4s linear;
+    transition: -webkit-transform .4s linear;
+    -o-transition: transform .4s linear;
+    transition: transform .4s linear;
+    transition: transform .4s linear, -webkit-transform .4s linear; }
+    .about__photo:hover {
+      -webkit-transform: scale(1.5);
+          -ms-transform: scale(1.5);
+              transform: scale(1.5); }
     @media (max-width: 787px) {
       .about__photo {
         height: 80px;
@@ -330,12 +373,21 @@ template {
     font-size: 40px;
     line-height: 56px;
     margin-bottom: 16px;
-    max-width: 787px; }
+    max-width: 787px;
+    -webkit-transition: -webkit-transform 1s linear;
+    transition: -webkit-transform 1s linear;
+    -o-transition: transform 1s linear;
+    transition: transform 1s linear;
+    transition: transform 1s linear, -webkit-transform 1s linear; }
     @media (max-width: 787px) {
       .about__header {
         font-size: 26px;
         line-height: 36px;
         margin-bottom: 8px; } }
+    .about__header--shake {
+      display: inline-block;
+      -webkit-animation: shake 1s linear infinite;
+              animation: shake 1s linear infinite; }
   .about__description {
     font-weight: 300;
     font-size: 20px;
@@ -349,18 +401,42 @@ template {
         line-height: 26px;
         margin-bottom: 40px; } }
     .about__description--link {
+      display: inline-block;
       font-weight: 500;
-      color: #0593FB; }
-      .about__description--link:visited {
-        color: #0593FB; }
+      color: #0593FB;
+      -webkit-transition: color .3s, -webkit-transform .3s linear;
+      transition: color .3s, -webkit-transform .3s linear;
+      -o-transition: color .3s, transform .3s linear;
+      transition: color .3s, transform .3s linear;
+      transition: color .3s, transform .3s linear, -webkit-transform .3s linear; }
+      .about__description--link:hover {
+        -webkit-transform: scale(1.025);
+            -ms-transform: scale(1.025);
+                transform: scale(1.025);
+        color: red; }
+        @media (max-width: 787px) {
+          .about__description--link:hover {
+            color: #0593FB; } }
   .about__email {
+    display: inline-block;
     font-weight: 500;
     font-size: 20px;
     line-height: 32px;
     color: #0593FB;
     text-decoration: none;
     padding-bottom: 8px;
-    border-bottom: 2px solid #0593FB; }
+    border-bottom: 2px solid #0593FB;
+    -webkit-transition: color .3s linear, border-color .3s linear, -webkit-transform .3s linear;
+    transition: color .3s linear, border-color .3s linear, -webkit-transform .3s linear;
+    -o-transition: color .3s linear, border-color .3s linear, transform .3s linear;
+    transition: color .3s linear, border-color .3s linear, transform .3s linear;
+    transition: color .3s linear, border-color .3s linear, transform .3s linear, -webkit-transform .3s linear; }
+    .about__email:hover {
+      color: red;
+      border-color: red;
+      -webkit-transform: scale(1.025);
+          -ms-transform: scale(1.025);
+              transform: scale(1.025); }
     @media (max-width: 787px) {
       .about__email {
         font-size: 14px;
