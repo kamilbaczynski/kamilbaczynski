@@ -37,7 +37,7 @@
 		grid-template-columns: 1fr 1fr;
 		grid-column-gap: 24px;
 		grid-row-gap: 24px;
-		@media (max-width: 787px) {
+		@media (max-width: 1000px) {
 			grid-template-columns: 1fr;
 		}
 	}
@@ -62,7 +62,7 @@
 		font-weight: 600;
 		font-size: 20px;
     line-height: 36px;
-    margin: 0 0 8px 32px;
+    margin: 0 0 8px 48px;
 		padding: 0;
 		@media (max-width: 787px) {
 			font-size: 16px;
