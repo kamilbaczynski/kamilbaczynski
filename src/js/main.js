@@ -13,13 +13,18 @@ fetch ('https://api.github.com/users/kamilbaczynski/repos?sort=created')
 
       projectsList.innerHTML +=`
       <article class="project-card">
-        <img class="project-card__image" src="../assets/img/github42.svg" alt="#">
-        <h3 class="project-card__name">${name}</h3>
-        ${
-          description 
-          ? `<p class="project-card__description">${description}</p>` 
-          : `<p class="project-card__description">No description 😫</p>`
-        }
+        <div class="project-card__containter">
+
+          <img class="project-card__image" src="../assets/img/github42.svg" alt="#">
+          <h3 class="project-card__name">${name}</h3>
+          ${
+            description 
+            ? `<p class="project-card__description">${description}</p>` 
+            : `<p class="project-card__description">No description 😫</p>`
+          }
+
+        </div>
+
         <div class="project-card__footer">
 
           ${
@@ -30,7 +35,6 @@ fetch ('https://api.github.com/users/kamilbaczynski/repos?sort=created')
         
           <a class="project-card__footer--link project-card__footer--link-github" href="${html_url}" target="_blank" rel="nofollow noreferrer"  title="Source code: ${name}">github</a> 
           
-      
         </div>
         
       </article>    
