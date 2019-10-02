@@ -40,9 +40,6 @@
 		line-height: 3rem;
 		position: relative;
 
-		@media (max-width: 787px) {
-		}
-	
 		&::before {
 			content: "";
 			display: block;
@@ -98,7 +95,7 @@
 				background-size: cover;
 				@media (max-width: 787px) {
 					left: 2px;
-					top: 14px;
+					top: 8px;
 					width: 12px;
 					height: 12px;
 				}
