@@ -47,9 +47,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	@media (max-width: 787px) {
-			
-	}
+
 	&__image {
     padding: 3px;
 		margin: 48px 0 16px 48px;
@@ -82,48 +80,52 @@
 	}
 
 	&__footer {
-    display: block;
 		text-align: right;
 		background-color: $dirtyWhite;
+		padding: 16px 48px;
 
 		&--link {
-			margin: 16px 48px 16px 0;
-			padding-left: 5px;
-			display: inline-block;
-      text-decoration: none;
+			display: inline-flex;		
       font-weight: 500;
       font-size: 1.125rem;
 			line-height: 2rem;
 			color: $linkBlue;
-
-			&-github {
+			position: relative;
+			align-items: center;
+			text-decoration: none;
+			& + & {
+				margin-left: 60px;
 				position: relative;
-				&::before {
+				&::after {
 					content: "";
-					position: absolute;
-					top: 5px;
-					left: -22px;
-					width: 24px;
-					height: 24px;
-					background: url(../../assets/img/code-icon.svg) center center no-repeat;
+					height: 2rem;
+					width: 2px;
+					background: #CBD2D9;
+					display: block;
+					border-radius: 2px;
+					position: absolute; 
+					left: -45px;
+					pointer-events: none;
 				}
 			}
 
-			&-demo {
-				position: relative;
-				&::before {
-					content: "";
-					position: absolute;
-					top: 5px;
-					left: -22px;
-					width: 24px;
-					height: 24px;
-					background: url(../../assets/img/demo-icon.svg) center center no-repeat;
+			&::before {
+				content: "";
+				position: absolute;
+				display: block;
+				top: 5px;
+		    left: -26px;
+				width: 24px;
+				height: 24px;
+				background: url(../../assets/img/code-icon.svg) center center no-repeat;		
+				@media (max-width: 787px) {
+					width: 20px;
+					height: 20px;
+					top: 2px;
 				}
 			}
-
-			&:visited {
-				color: $linkBlue;
+			&-demo::before {
+				background: url(../../assets/img/demo-icon.svg) center center no-repeat;
 			}
 		}
 	}
