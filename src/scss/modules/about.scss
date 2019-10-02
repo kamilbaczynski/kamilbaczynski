@@ -18,6 +18,7 @@
 
 .about {
 	margin: 112px 0 180px 112px;
+	padding-right: 16px;
 	@media (max-width: 787px) {
 		margin: 64px 16px 120px 16px;
 	}
@@ -43,14 +44,12 @@
 
 	&__header {
 		font-weight: 600;
-		font-size: 40px;
-		line-height: 56px;
+		font-size: 2.5rem;
+		line-height: 3.5rem;
 		margin-bottom: 16px;
 		max-width: 787px;
 		transition: transform 1s linear;
 		@media (max-width: 787px) {
-			font-size: 26px;
-			line-height: 36px;
 			margin-bottom: 8px;
 		}
 		&--shake{
@@ -61,14 +60,12 @@
 
 	&__description {
 		font-weight: 300;
-		font-size: 20px;
-		line-height: 36px;
+		font-size: 1.25rem;
+		line-height: 2.25rem;
 		color: $darkGrey;
 		margin-bottom: 60px;
 		max-width: 787px;
 		@media (max-width: 787px) {
-			font-size: 14px;
-			line-height: 26px;
 			margin-bottom: 40px;
 		}
 		&--link {
@@ -96,8 +93,8 @@
 	&__email {
 		display: inline-block;
 		font-weight: 500;
-		font-size: 20px;
-		line-height: 32px;
+		font-size: 1.25rem;
+		line-height: 2rem;
 		color: $linkBlue;
 		text-decoration: none;
 		padding-bottom: 8px;
@@ -107,10 +104,6 @@
 			color: red;
 			border-color: red;
 			transform: scale(1.025);
-		}
-		@media (max-width: 787px) {
-			font-size: 14px;
-			line-height: 26px;
 		}
 	}
 }

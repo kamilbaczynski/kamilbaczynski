@@ -7,15 +7,13 @@
   
   &__header {
     font-weight: 600;
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 2rem;
+    line-height: 2.75rem;
     color: #FFFFFF;
     margin: 0 0 16px 0;
     padding: 24px 0 0 0;
     position: relative;
     @media (max-width: 787px) {
-      font-size: 24px;
-      line-height: 32px;
       padding: 8px 0 0 0;
       margin: 0 0 8px 0;
     }
@@ -38,17 +36,12 @@
 
   &__description {
     font-weight: 300;
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
     color: #FFFFFF;
     margin: 0 0 24px 0;
     padding: 0;
-    @media (max-width: 787px) {
-      font-size: 14px;
-      line-height: 26px;
-    }
   }
-
 
   &__social-link {
     display: inline-block;
@@ -58,8 +51,6 @@
     height: 32px;
     margin: 0 24px 48px 0;
     @media (max-width: 787px) {
-      font-size: 14px;
-      line-height: 24px;
       margin-bottom: 32px;
     }
 
@@ -78,16 +69,12 @@
   &__email {
     &--link {
       font-weight: 500;
-      font-size: 20px;
-      line-height: 32px;
+      font-size: 1.25rem;
+      line-height: 2rem;
       color: $linkBlue;
       border-bottom: 2px solid $linkBlue;
       padding-bottom: 8px;
       text-decoration: none;
-      @media (max-width: 787px) {
-        font-size: 14px;
-        line-height: 24px;
-      }
     }
   }
 }

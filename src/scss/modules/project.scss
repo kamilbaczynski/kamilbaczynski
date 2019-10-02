@@ -10,11 +10,9 @@
 		margin: 0 0 16px 0;
 		padding: 0;
 		font-weight: 600;
-		font-size: 36px;
-		line-height: 48px;
+		font-size: 2.25rem;
+		line-height: 3rem;
 		@media (max-width: 787px) {
-			font-size: 24px;
-			line-height: 32px;
 			text-align: center;
 		}
 	}
@@ -23,11 +21,9 @@
 		margin: 0 0 64px 0;
 		max-width: 600px;
 		font-weight: 300;
-		font-size: 20px;
-		line-height: 36px;
+		font-size: 1.25rem;
+		line-height: 2.25rem;
 		@media (max-width: 787px) {
-			font-size: 14px;
-			line-height: 26px;
 			text-align: center;
 		}
 	}
@@ -47,6 +43,7 @@
 	background: #FFFFFF;
 	box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
 	border-radius: 8px;
+	overflow: hidden;
 	@media (max-width: 787px) {
 			
 	}
@@ -60,27 +57,23 @@
 
 	&__name {
 		font-weight: 600;
-		font-size: 20px;
-    line-height: 36px;
+		font-size: 1.25rem;
+    line-height: 2.25rem;
     margin: 0 0 8px 48px;
 		padding: 0;
 		@media (max-width: 787px) {
-			font-size: 16px;
-			line-height: 24px;
 			margin: 0 0 4px 32px;
 		}
 	}
 
 	&__description {
     font-weight: 300;
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 1.125rem;
+    line-height: 2rem;
     color: $darkGrey;
     margin: 0 0 48px 48px;
 		padding: 0;
 		@media (max-width: 787px) {
-			font-size: 14px;
-			line-height: 26px;
 			margin: 0 0 32px 32px;
 		}
 	}
@@ -89,12 +82,6 @@
     display: block;
 		text-align: right;
 		background-color: $dirtyWhite;
-		border-bottom-left-radius: 8px;
-		border-bottom-right-radius: 8px;
-		@media (max-width: 787px) {
-			
-		}
-		
 
 		&--link {
 			margin: 16px 48px 16px 0;
@@ -102,13 +89,9 @@
 			display: inline-block;
       text-decoration: none;
       font-weight: 500;
-      font-size: 18px;
-			line-height: 32px;
+      font-size: 1.125rem;
+			line-height: 2rem;
 			color: $linkBlue;
-			@media (max-width: 787px) {
-				font-size: 14px;
-				line-height: 28px;
-			}
 
 			&-github {
 				position: relative;

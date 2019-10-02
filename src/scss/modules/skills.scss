@@ -6,14 +6,12 @@
 	}
 	&__header {
 		font-weight: 600;
-		font-size: 36px;
-		line-height: 48px;
+		font-size: 2.25rem;
+		line-height: 3rem;
 		padding-bottom: 16px;
 		border-bottom: 2px solid #CBD2D9;
 		margin-bottom: 128px;
 		@media (max-width: 787px) {
-			font-size: 24px;
-			line-height: 32px;
 			text-align: center;
 			padding-bottom: 16px;
 			margin-bottom: 60px;
@@ -38,13 +36,11 @@
 	&__header {
 		margin: 0;
 		font-weight: 600;
-		font-size: 36px;
-		line-height: 48px;
+		font-size: 2.25rem;
+		line-height: 3rem;
 		position: relative;
 
 		@media (max-width: 787px) {
-			font-size: 22px;
-			line-height: 32px;
 		}
 	
 		&::before {
@@ -83,8 +79,8 @@
 			grid-template-columns: 1fr;
 		}
 		&--item {
-			font-size: 18px;
-			line-height: 40px;
+			font-size: 1.125rem;
+			line-height: 2.5rem;
 			white-space: nowrap;
 			position: relative;
 			padding-left: 30px;
